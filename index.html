@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balística Forense Interactiva</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Balística Forense Interactiva 🤓</h1>
+
+    <!-- MENU -->
+    <div class="menu">
+
+        <button onclick="mostrarSeccion('pistola')">
+            Pistola
+        </button>
+
+        <button onclick="mostrarSeccion('cartucho')">
+            Cartucho
+        </button>
+
+        <button onclick="mostrarSeccion('bala')">
+            Bala y Casquillo
+        </button>
+
+    </div>
+
+    <div class="contenedor">
+
+        <!-- IMAGENES -->
+        <div class="imagen-container">
+
+            <!-- ================= PISTOLA ================= -->
+            <div id="pistola">
+
+                <img src="pistolaa.png" alt="Pistola">
+
+                <!-- PUNTOS PISTOLA -->
+                <button class="punto gatillo" onclick="mostrarInfo('gatillo')"></button>
+
+                <button class="punto canon" onclick="mostrarInfo('canon')"></button>
+
+                <button class="punto cargador" onclick="mostrarInfo('cargador')"></button>
+
+                <button class="punto boca" onclick="mostrarInfo('boca')"></button>
+
+                <button class="punto empunadura" onclick="mostrarInfo('empunadura')"></button>
+
+                <button class="punto alza" onclick="mostrarInfo('alza')"></button>
+
+                <button class="punto guardamonte" onclick="mostrarInfo('guardamonte')"></button>
+
+                <button class="punto calibre" onclick="mostrarInfo('calibre')"></button>
+
+                <button class="punto puntoMira" onclick="mostrarInfo('puntoMira')"></button>
+
+                <button class="punto seguroCargador" onclick="mostrarInfo('seguroCargador')"></button>
+
+            </div>
+
+            <!-- ================= CARTUCHO ================= -->
+            <div id="cartucho" style="display:none;">
+
+                <img src="Cartuchos.jpg" alt="Cartucho">
+
+                <!-- PUNTOS CARTUCHO -->
+                <button class="punto cartucho" onclick="mostrarInfo('cartucho')"></button>
+
+          <button class="punto Composición" onclick="mostrarInfo('Composición')"></button>
+
+          <button class="punto Clasificación" onclick="mostrarInfo('Clasificación')"></button>
+
+          <button class="punto DatosForenses" onclick="mostrarInfo('DatosForenses')"></button>
+
+            </div>
+
+
+
+            <!-- ================= BALA ================= -->
+            <div id="bala" style="display:none;">
+
+                <img src="bala y casquillo.png" alt="Bala">
+
+                <!-- PUNTOS BALA -->
+                <button class="punto Bala" onclick="mostrarInfo('Bala')"></button>
+
+                <button class="punto Casquillo" onclick="mostrarInfo('Casquillo')"></button>
+
+                <button class="punto Fulminante" onclick="mostrarInfo('Fulminante')"></button>
+
+                <button class="punto Pólvora" onclick="mostrarInfo('Pólvora')"></button>
+
+            </div>
+
+        </div>
+
+        <!-- PANEL DE INFORMACION -->
+        <div class="info" id="info">
+
+            <h2>Información</h2>
+
+            <p>
+                Para navegar haz clic sobre una parte del arma, cartucho o bala. 
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
